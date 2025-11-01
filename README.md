@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 
 ## 🚀 Live Demo
 
-Visit the live portfolio: [https://mynamevansh.github.io/Portfolio-2025/](https://mynamevansh.github.io/Portfolio-2025/)
+Visit the live portfolio: [https://portfolio-2025-xi-ten.vercel.app/](https://portfolio-2025-xi-ten.vercel.app/)
 
 ## ✨ Features
 
