@@ -50,8 +50,7 @@
           <div class="featured-name"><span class="typedText"></span></div>
           <div class="text-info"><p>My name is Vansh Pratap Singh Ranawat</p></div>
           <div class="text-btn">
-            <a href="mailto:vanshrawat.dev@gmail.com" style="text-decoration: none;"><button class="btn hire-btn">Hire Me</button></a>
-            <button class="btn">Download Resume<i class="uil uil-file"></i></button>
+            <button class="btn" id="downloadResumeBtn">Download Resume<i class="uil uil-file"></i></button>
           </div>
           <div class="social_icons">
             <div class="icon">
@@ -91,48 +90,167 @@
             </div>
           </div>
 
-          <div class="skill">
-            <div class="skill-box">
-              <span class="title">HTML</span>
-              <div class="skill-bar">
-                <div class="skill-per html" data-percent="90">
-                  <span class="tooltip">90%</span>
-                </div>
-              </div>
+          <div class="tech-stack-container">
+            <div class="tech-stack-tagline">
+              <span class="brain-emoji">🧠</span>
+              <p>"Bringing ideas to life through clean code and creative design."</p>
+            </div>
+            
+            <div class="tech-filters">
+              <button class="filter-btn active" data-filter="all">All Skills</button>
+              <button class="filter-btn" data-filter="frontend">Frontend</button>
+              <button class="filter-btn" data-filter="backend">Backend</button>
+              <button class="filter-btn" data-filter="tools">Tools</button>
             </div>
 
-            <div class="skill-box">
-              <span class="title">CSS</span>
-              <div class="skill-bar css">
-                <div class="skill-per css" data-percent="90">
-                  <span class="tooltip">90%</span>
+            <div class="tech-grid">
+              <!-- HTML -->
+              <div class="tech-card" data-category="frontend">
+                <div class="tech-icon">
+                  <i class="fab fa-html5"></i>
+                </div>
+                <h3 class="tech-name">HTML</h3>
+                <p class="tech-tagline">Semantic markup expert</p>
+                <div class="circular-progress" data-percent="95">
+                  <svg class="progress-ring" width="120" height="120">
+                    <circle class="progress-ring-circle-bg" stroke="#e6e6e6" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                    <circle class="progress-ring-circle" stroke="url(#gradient)" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                    <defs>
+                      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#7B2FF7;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#F107A3;stop-opacity:1" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <span class="progress-text">95%</span>
                 </div>
               </div>
-            </div>
 
-            <!--<div class="skill-box">
-              <span class="title">Python</span>
-              <div class="skill-bar">
-                <div class="skill-per python" data-percent="70">
-                  <span class="tooltip">70%</span>
+              <!-- CSS / Tailwind -->
+              <div class="tech-card" data-category="frontend">
+                <div class="tech-icon">
+                  <i class="fab fa-css3-alt"></i>
+                </div>
+                <h3 class="tech-name">CSS / Tailwind</h3>
+                <p class="tech-tagline">Styling & responsive design</p>
+                <div class="circular-progress" data-percent="90">
+                  <svg class="progress-ring" width="120" height="120">
+                    <circle class="progress-ring-circle-bg" stroke="#e6e6e6" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                    <circle class="progress-ring-circle" stroke="url(#gradient)" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                  </svg>
+                  <span class="progress-text">90%</span>
                 </div>
               </div>
-            </div>-->
 
-            <div class="skill-box">
-              <span class="title">JavaScript</span>
-              <div class="skill-bar">
-                <div class="skill-per javascript" data-percent="70">
-                  <span class="tooltip">70%</span>
+              <!-- JavaScript -->
+              <div class="tech-card" data-category="frontend">
+                <div class="tech-icon">
+                  <i class="fab fa-js"></i>
+                </div>
+                <h3 class="tech-name">JavaScript (ES6+)</h3>
+                <p class="tech-tagline">Modern JS development</p>
+                <div class="circular-progress" data-percent="85">
+                  <svg class="progress-ring" width="120" height="120">
+                    <circle class="progress-ring-circle-bg" stroke="#e6e6e6" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                    <circle class="progress-ring-circle" stroke="url(#gradient)" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                  </svg>
+                  <span class="progress-text">85%</span>
                 </div>
               </div>
-            </div>
 
-            <div class="skill-box">
-              <span class="title">React</span>
-              <div class="skill-bar">
-                <div class="skill-per react" data-percent="60">
-                  <span class="tooltip">60%</span>
+              <!-- React.js -->
+              <div class="tech-card" data-category="frontend">
+                <div class="tech-icon">
+                  <i class="fab fa-react"></i>
+                </div>
+                <h3 class="tech-name">React.js</h3>
+                <p class="tech-tagline">Building responsive UIs</p>
+                <div class="circular-progress" data-percent="80">
+                  <svg class="progress-ring" width="120" height="120">
+                    <circle class="progress-ring-circle-bg" stroke="#e6e6e6" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                    <circle class="progress-ring-circle" stroke="url(#gradient)" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                  </svg>
+                  <span class="progress-text">80%</span>
+                </div>
+              </div>
+
+              <!-- Node.js & Express -->
+              <div class="tech-card" data-category="backend">
+                <div class="tech-icon">
+                  <i class="fab fa-node-js"></i>
+                </div>
+                <h3 class="tech-name">Node.js & Express</h3>
+                <p class="tech-tagline">Server-side development</p>
+                <div class="circular-progress" data-percent="75">
+                  <svg class="progress-ring" width="120" height="120">
+                    <circle class="progress-ring-circle-bg" stroke="#e6e6e6" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                    <circle class="progress-ring-circle" stroke="url(#gradient)" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                  </svg>
+                  <span class="progress-text">75%</span>
+                </div>
+              </div>
+
+              <!-- MongoDB -->
+              <div class="tech-card" data-category="backend">
+                <div class="tech-icon">
+                  <i class="fas fa-database"></i>
+                </div>
+                <h3 class="tech-name">MongoDB</h3>
+                <p class="tech-tagline">NoSQL database expert</p>
+                <div class="circular-progress" data-percent="70">
+                  <svg class="progress-ring" width="120" height="120">
+                    <circle class="progress-ring-circle-bg" stroke="#e6e6e6" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                    <circle class="progress-ring-circle" stroke="url(#gradient)" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                  </svg>
+                  <span class="progress-text">70%</span>
+                </div>
+              </div>
+
+              <!-- Blockchain -->
+              <div class="tech-card" data-category="backend">
+                <div class="tech-icon">
+                  <i class="fas fa-cube"></i>
+                </div>
+                <h3 class="tech-name">Blockchain</h3>
+                <p class="tech-tagline">Solidity & Web3.js</p>
+                <div class="circular-progress" data-percent="65">
+                  <svg class="progress-ring" width="120" height="120">
+                    <circle class="progress-ring-circle-bg" stroke="#e6e6e6" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                    <circle class="progress-ring-circle" stroke="url(#gradient)" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                  </svg>
+                  <span class="progress-text">65%</span>
+                </div>
+              </div>
+
+              <!-- Git & GitHub -->
+              <div class="tech-card" data-category="tools">
+                <div class="tech-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <h3 class="tech-name">Git & GitHub</h3>
+                <p class="tech-tagline">Version control master</p>
+                <div class="circular-progress" data-percent="85">
+                  <svg class="progress-ring" width="120" height="120">
+                    <circle class="progress-ring-circle-bg" stroke="#e6e6e6" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                    <circle class="progress-ring-circle" stroke="url(#gradient)" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                  </svg>
+                  <span class="progress-text">85%</span>
+                </div>
+              </div>
+
+              <!-- Vercel / Deployment -->
+              <div class="tech-card" data-category="tools">
+                <div class="tech-icon">
+                  <i class="fas fa-rocket"></i>
+                </div>
+                <h3 class="tech-name">Vercel / Deployment</h3>
+                <p class="tech-tagline">Cloud deployment expert</p>
+                <div class="circular-progress" data-percent="80">
+                  <svg class="progress-ring" width="120" height="120">
+                    <circle class="progress-ring-circle-bg" stroke="#e6e6e6" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                    <circle class="progress-ring-circle" stroke="url(#gradient)" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                  </svg>
+                  <span class="progress-text">80%</span>
                 </div>
               </div>
             </div>
@@ -151,16 +269,20 @@
               </p>
           </div>
           <div class="project-box lostandfound">
-            <p class="hover-text">A simple Lost and Found web application built using HTML, CSS, and JavaScript. It allows users to report lost or found items with details like item name, description, and contact info. The project highlights clean UI design, form handling, and DOM manipulation.
+            <h1 style="font-family: georgia; font-size: 25px; font-weight: 400;">Lost and Found</h1>
+            <p class="hover-text"><strong>Tech Stack:</strong> MERN (MongoDB, Express.js, React.js, Node.js)<br><br>
+            A full-stack web application that allows users to report and recover lost or found items with role-based authentication, CRUD operations, and responsive UI. Integrated MongoDB Atlas for secure data storage and deployed on Vercel.<br><br>
             
-            <a href="https://lost-and-found-green-seven.vercel.app/">https://lost-and-found-green-seven.vercel.app/</a>  
+            🔗 Live: <a href="https://lost-and-found-omega.vercel.app">lost-and-found-omega.vercel.app</a><br>
             </p>
             
           </div>
           <div class="project-box award">
-            
-            <h1 style="font-family: georgia; font-size: 20px; font-weight: 500;">Experience</h1>
-            <label> 4+ Months in Web Development</label>
+            <h1 style="font-family: georgia; font-size: 25px; font-weight: 400;">🔐 Certificate Verification</h1>
+            <p class="hover-text"><strong>Tech Stack:</strong> Blockchain, Solidity, React.js, Node.js, IPFS, Web3.js<br><br>
+            A decentralized platform for issuing and verifying academic or professional certificates using Ethereum blockchain and IPFS. Ensures authenticity through smart contracts, tamper-proof validation, and seamless MetaMask integration.<br><br>
+            🔗 Live: <a href="https://blockchain-certificate-verification.vercel.app">blockchain-certificate-verification.vercel.app</a>
+            </p>
           </div>
         </div>
       </section>
