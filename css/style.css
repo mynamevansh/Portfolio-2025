@@ -73,7 +73,7 @@ nav {
 .nav-logo {
     height: 80px;
     width: 80px;
-    background-image: url(../assets/icons/mit.png);
+    background-image: url('/assets/icons/mit.png');
     background-size: cover;
     border-radius: 50%;
     margin-left: 20px;
@@ -683,7 +683,7 @@ body.dark .tech-tagline {
     font-size: 20px;
     font-family: georgia;
     font-weight: 500;
-    background-image: url('../assets/icons/spotify.png');
+    background-image: url('/assets/icons/spotify.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -737,7 +737,7 @@ body.dark .award h1 {
     font-size: 20px;
     font-family: georgia;
     font-weight: 500;
-    background-image: url('../assets/icons/lost.png');
+    background-image: url('/assets/icons/lost.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -786,7 +786,7 @@ body.dark .award h1 {
     font-size: 20px;
     font-family: georgia;
     font-weight: 500;
-    background-image: url('../assets/icons/award.png');
+    background-image: url('/assets/icons/award.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
