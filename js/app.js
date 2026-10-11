@@ -111,12 +111,12 @@ function sendMail() {
 
 document.getElementById("downloadResumeBtn").addEventListener("click", function () {
   const downloadLink = document.createElement("a");
-  downloadLink.href = "assets/Vansh Ranawat Resume.pdf";
+  downloadLink.href = "assets/VanshRanawat-Resume.pdf";
   downloadLink.download = "Vansh_Ranawat_Resume.pdf";
   downloadLink.click();
 
   setTimeout(() => {
-    window.open("assets/Vansh Ranawat Resume.pdf", "_blank");
+    window.open("assets/VanshRanawat-Resume.pdf", "_blank");
   }, 300);
 });
 const filterBtns = document.querySelectorAll('.filter-btn');
