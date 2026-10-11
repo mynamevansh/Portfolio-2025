@@ -98,7 +98,7 @@ To customize the portfolio:
 - **Email**: vanshranawat48@gmail.com
 - **LinkedIn**: [ranawatvansh](https://www.linkedin.com/in/ranawatvansh/)
 - **GitHub**: [mynamevansh](https://github.com/mynamevansh)
-- **Twitter**: [@meranawatvansh](https://x.com/meranawatvansh)
+- **LeetCode**: [iamvansh29](https://leetcode.com/u/iamvansh29/)
 - **Phone**: +91 9509410180
 
 ## 🎯 Future Enhancements
